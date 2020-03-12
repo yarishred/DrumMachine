@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Machine by Yari</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <h1>Drum Machine </h1> -->
+    <div id="drum__main-container">
+        <div class="drum__settings-control">
+            <div class="drum__power-button drum">
+                <div class="power">
+                    <h2>Power</h2>
+                </div>
+            </div>
+            <div class="drum__change-sounds drum">
+                <div class="pattern-two">
+                    <h2>Change Pattern</h2>
+                </div>
+            </div>
+            <div class="drum__record-button drum">
+                <div class="record">
+                    <h2>Record</h2>
+                </div>
+            </div>  
+            <div class="drum__volume-button drum">
+                <div class="volume__number">0</div>
+                <input type="range" min="1" max="10" value="5">
+            </div>  
+        </div>
+        <div class="drum__main-pad-control">
+            <div class="drum__container">
+                <div class="pad" data-key="49">
+                    <h6>Pad 1</h6>
+                </div>
+                <div class="pad" data-key="50">
+                    <h6>Pad 2</h6>
+                </div>
+                <div class="pad" data-key="51">
+                    <h6>Pad 3</h6>
+                </div>
+                <div class="pad" data-key="52">
+                    <h6>Pad 4</h6>
+                </div>
+                <div class="pad" data-key="81">
+                    <h6>Pad Q</h6>
+                </div>
+                <div class="pad" data-key="87">
+                    <h6>Pad W</h6>
+                </div>
+                <div class="pad" data-key="69">
+                    <h6>Pad E</h6>
+                </div>
+                <div class="pad" data-key="82">
+                    <h6>Pad R</h6>
+                </div>
+                <div class="pad" data-key="65">
+                    <h6>Pad A</h6>
+                </div>
+                <div class="pad" data-key="83">
+                    <h6>Pad S</h6>
+                </div>
+                <div class="pad" data-key="68">
+                    <h6>Pad D</h6>
+                </div>
+                <div class="pad" data-key="70">
+                    <h6>Pad F</h6>
+                </div>
+                <div class="pad" data-key="90">
+                    <h6>Pad Z</h6>
+                </div>
+                <div class="pad" data-key="88">
+                    <h6>Pad X</h6>
+                </div>
+                <div class="pad" data-key="67">
+                    <h6>Pad C</h6>
+                </div>
+                <div class="pad" data-key="86">
+                    <h6>Pad V</h6>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <audio data-key="49" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="50" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="51" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="52" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="81" src="/sampledrummachine/bass808.wav"></audio>
+    <audio data-key="87" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="69" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="82" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="65" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="83" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="68" src="/sampledrummachine/snareclose.wav"></audio>
+    <audio data-key="70" src="/sampledrummachine/clap.wav"></audio>
+    <audio data-key="90" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="88" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="67" src="/sampledrummachine/basskick.wav"></audio>
+    <audio data-key="86" src="/sampledrummachine/basskick.wav"></audio>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

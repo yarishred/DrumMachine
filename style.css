@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f3f3f3;
+    font-family: 'Poppings', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1{
+    padding: 5px;
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px #333;
+}
+
+h2{
+  font-size: 10px;
+  color: #f3f3f3;
+  padding-top: 25px;
+}
+
+h6{
+    color: #f3f3f3;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#drum__main-container{
+    position: absolute;
+    margin: auto;
+    width: 50%;
+    height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border: 1px #f3f3f3 solid;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-gap: 2rem;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.drum__settings-control,.drum__main-pad-control{
+    width: 100%;
+    height: 450px;
+}
+
+.drum__settings-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px #f3f3f3 solid;
+}
+
+.drum__settings-control .drum {
+    margin: -8px 0;
+}
+
+
+.drum__main-pad-control .drum__container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    padding: 10px;
+    grid-gap: 1rem;
+    margin: -16px 30px;
+}
+
+.drum__main-pad-control .pad{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin: 6px 0;
+    z-index: 1;
+    border: 4px solid #F21B3F;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.pad > h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.playing > h6{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(-45deg, #f1ea89 0%,#8bf3ef 36%,#dac4f4 61%,#f393bb 95%); 
+    color: #333;
+    transition: ease-out 0.07s
+}
+
+/* Volumen */
+
